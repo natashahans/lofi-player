@@ -31,8 +31,10 @@ For major changes, please open an issue first to discuss what you would like to 
 ```bash
 lofi-player/
 ├── images/          # Visual assets  
-├── music/           # Lofi beats and tracks  
-├── scripts/         # JavaScript files  
+├── music/           # Lofi beats and tracks
+├── main.js          # Main Electron process that controls the application lifecycle
+├── preload.js       # Preload script to safely expose certain functionalities to the renderer
+├── script.js        # JavaScript file handling the core logic for music playback and app behavior  
 ├── style.css        # Styling for the app  
 ├── index.html       # Main entry point  
 └── README.md        # This file
